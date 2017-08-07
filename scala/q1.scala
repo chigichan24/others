@@ -1,7 +1,8 @@
 class q1{
   def show(value: Option[String]):Unit = {
-    val tmp = value.get
-    println(tmp)
+    if(value.isDefined){
+    	println(value.get)
+    }
   }
 }
 obj = new q1()
