@@ -1,11 +1,7 @@
 def getFirst(value: Option[String]):String = {
-	if(value.isEmpty){
-		return ""
+	var top: String = ""
+	value.foreach{ x=>
+		top = x.take(1)
 	}
-	if(value.get.length >= 1){
-		return value.get.charAt(0)+""
-	}
-	else{
-		return ""
-	}
+	top
 }
