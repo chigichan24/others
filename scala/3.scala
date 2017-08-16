@@ -1,3 +1,5 @@
 def translate(num: Option[Int]): Option[String] = {
-	dictionary.get(num.get)
+	for(
+		s <- num
+	) yield dictionary.get(s).get
 }
