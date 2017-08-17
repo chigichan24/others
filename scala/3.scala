@@ -1,5 +1,6 @@
 def translate(num: Option[Int]): Option[String] = {
-	for(
-		s <- num
-	) yield dictionary.get(s).get
+	num match {
+		case Some(x) => dictionary.get(x)
+		case _ => None
+	}
 }
