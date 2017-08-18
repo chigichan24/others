@@ -1,6 +1,6 @@
 def translate(num: Option[Int]): Option[String] = {
-	num match {
-		case Some(x) => dictionary.get(x)
-		case _ => None
+	val res = num.foreach{
+		dictionary.get(_)
 	}
+	res
 }
