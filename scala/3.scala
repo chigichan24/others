@@ -1,3 +1,3 @@
 def translate(num: Option[Int]): Option[String] = {
-	num.flatMap{dictionary.get(_)}
+	num.flatMap{dictionary.get}
 }
